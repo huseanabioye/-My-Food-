@@ -5,12 +5,30 @@
 }
 html{
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 body{
   font-family:"Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
+  
+  
+}
+.btn-mobile-nav{
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+
+}
+.icon-mobile-nav{
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+.icon-mobile-nav[name="close-outline"]{
+  display: none;
 }
 /* *************************** */
 /* general */
@@ -57,11 +75,28 @@ body{
   background-color: #fdf2e9;
   /* Becase we want header to be stick Later */
   height: 9.6rem;
+  padding: 0 4.8rem;
+  position: relative;
+}
+.sticky .section-hero {
+  margin-top: 9.6rem;
+}
+
+.sticky .header{
+  position:fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4.9rem;
+  background-color: #fff;
+  z-index:1;
 }
 .main-nav-list{
+  list-style: none;
   display: flex;
   list-style: none;
-  gap: 3.2rem;
+  gap: 4.8rem;
+  align-items: center;
 }
 
 .main-nav-link:link, 
